@@ -6,6 +6,7 @@
 package me.model;
 
 import java.util.List;
+import me.view.Messages;
 
 public class Enemy extends Character {
     private static final long serialVersionUID = 1L;
@@ -45,6 +46,32 @@ public class Enemy extends Character {
     public String getAttack() {
 		return attkDesc;
 	}
+
+    /**
+     * Executes a normal enemy turn. Boss subclasses override this entry point
+     * and delegate it to their Template Method implementation.
+     */
+    public String performTurn(List<Hero> heroes) {
+        StringBuilder log = new StringBuilder();
+        Hero target = selectTarjet(heroes);
+
+        if (target == null) {
+            log.append(name().toUpperCase())
+               .append(Messages.ENEMY_MISS)
+               .append(Messages.NEW_LINE);
+            return log.toString();
+        }
+
+        log.append(name().toUpperCase())
+           .append(" attacks ")
+           .append(target.name().toUpperCase())
+           .append(Messages.NEW_LINE);
+        log.append(getAttack()).append(Messages.NEW_LINE);
+
+        int damage = target.isDefending() ? 10 : 20;
+        log.append(attack(target, getMainElement(), damage)).append(Messages.NEW_LINE);
+        return log.toString();
+    }
     
     public void setEnemyNum(int n) {
     	enemy_num = n;

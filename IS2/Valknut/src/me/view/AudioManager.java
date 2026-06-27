@@ -35,7 +35,8 @@ public class AudioManager {
             music.loop(Clip.LOOP_CONTINUOUSLY);
             music.start();
             
-        } catch (IOException | LineUnavailableException | UnsupportedAudioFileException e) {
+        } catch (IOException | LineUnavailableException | UnsupportedAudioFileException | IllegalArgumentException e) {
+            // The game must still start when the current computer has no compatible audio line.
             System.err.println("Music play error: " + e.getMessage());
         }
     }
@@ -53,7 +54,8 @@ public class AudioManager {
             Clip sound = AudioSystem.getClip();
             sound.open(audioInputStream);
             sound.start();
-        } catch (IOException | LineUnavailableException | UnsupportedAudioFileException e) {
+        } catch (IOException | LineUnavailableException | UnsupportedAudioFileException | IllegalArgumentException e) {
+            // A missing audio device must not stop the game.
             System.out.println("Sound play error: " + e.getMessage());
         }
     }

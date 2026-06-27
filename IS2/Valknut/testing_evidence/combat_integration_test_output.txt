@@ -1,0 +1,12 @@
+
+FAFNIR - PHASE 1: WING ASSAULT
+Fafnir circles above the battlefield and prepares his next strike.
+FAFNIR attacks INTEGRATIONHERO
+Fafnir sends you flying with a powerful wingbeat
+INTEGRATIONHERO is WEAK to FIRE
+INTEGRATIONHERO has received 33 point of damage.
+Health points: 217
+
+Fafnir lands and watches the heroes carefully.
+
+COMBAT INTEGRATION TEST PASSED

@@ -9,6 +9,8 @@ package me.model;
 import java.util.ArrayList;
 import java.util.List;
 import me.view.Messages;
+import me.model.boss.FafnirBoss;
+import me.model.boss.SkollBoss;
 
 public class EnemyBuilder {
     static public List <Enemy> enemies;
@@ -63,18 +65,10 @@ public class EnemyBuilder {
                 return draugr;
             }
             case "fafnir" -> {
-            	Enemy fafnir = new Enemy(Messages.FAFNIR, 200, 550, 300, Messages.FAFNIR_ATTACK);
-                element.add(1); element.add(1); element.add(1); element.add(1); element.add(5);
-                fafnir.setElementStats(element);
-                fafnir.setSprite("/resources/images/Creatures/fafnir.png");
-                return fafnir;
+                return new FafnirBoss();
             }
             case "skoll" -> {
-            	Enemy skoll = new Enemy(Messages.SKOLL, 150, 450, 250, Messages.SKOLL_ATTACK);
-                element.add(1); element.add(4); element.add(1); element.add(1); element.add(1);
-                skoll.setElementStats(element);
-                skoll.setSprite("/resources/images/Creatures/skoll.png");
-                return skoll;
+                return new SkollBoss();
             }
             case "hati" -> {
             	Enemy hati = new Enemy(Messages.HATI, 150, 450, 250, Messages.HATI_ATTACK);

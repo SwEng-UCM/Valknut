@@ -1,0 +1,51 @@
+--- FAFNIR PHASE 1 ---
+FAFNIR - PHASE 1: WING ASSAULT
+Fafnir circles above the battlefield and prepares his next strike.
+FAFNIR attacks TESTHEROONE
+Fafnir sends you flying with a powerful wingbeat
+TESTHEROONE is WEAK to FIRE
+TESTHEROONE has received 33 point of damage.
+Health points: 167
+
+Fafnir lands and watches the heroes carefully.
+
+--- FAFNIR PHASE 2 ---
+FAFNIR - PHASE 2: INFERNO
+Fafnir makes fire rain down from the skies, burning you and everything near you
+TESTHEROONE is WEAK to FIRE
+TESTHEROONE has received 12 point of damage.
+Health points: 155
+TESTHEROTWO is WEAK to FIRE
+TESTHEROTWO has received 12 point of damage.
+Health points: 188
+FAFNIR attacks TESTHEROTWO
+Fafnir sends you flying with a powerful wingbeat
+TESTHEROTWO is WEAK to FIRE
+TESTHEROTWO has received 42 point of damage.
+Health points: 146
+
+The flames around Fafnir grow stronger.
+
+--- SKOLL TURN 1 ---
+SKOLL - MOON HUNT, BOSS TURN 1
+Skoll gathers moonlight but does not heal this turn.
+SK?LL attacks TESTHEROONE
+Skoll runs at you with its maw open ready to eat you in one piece
+TESTHEROONE is WEAK to CHAOS
+TESTHEROONE has received 36 point of damage.
+Health points: 119
+
+Skoll completes the hunt and waits for the next moon cycle.
+
+--- SKOLL TURN 2 ---
+SKOLL - MOON HUNT, BOSS TURN 2
+MOONLIGHT REGENERATION: Skoll restores 20 health points. Current health: 120.
+SK?LL attacks TESTHEROTWO
+Skoll runs at you with its maw open ready to eat you in one piece
+TESTHEROTWO is WEAK to CHAOS
+TESTHEROTWO has received 36 point of damage.
+Health points: 110
+
+Skoll completes the hunt and waits for the next moon cycle.
+
+BOSS SMOKE TEST PASSED

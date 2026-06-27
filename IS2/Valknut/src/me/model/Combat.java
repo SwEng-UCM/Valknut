@@ -193,21 +193,11 @@ public class Combat implements Serializable {
                 enemies.remove(lastTarjet);
         }
         else{
-            //Similar logic for the point of view of the enemy
+            // Regular enemies and bosses use the same polymorphic entry point.
+            // Bosses override performTurn() and execute their Template Method.
             Enemy e = enemies.get(turn - (heroes.size() + 1));
-            Hero h = e.selectTarjet(heroes);
-            if(h != null){
-                sb.append(e.name().toUpperCase()).append(" attacks ").append(h.name().toUpperCase()).append(Messages.NEW_LINE);
-                sb.append(e.getAttack()).append(Messages.NEW_LINE);
-                int damage;
-                if(h.isDefending()){damage = 10;}else{damage = 20;}
-                sb.append(e.attack(h, e.getMainElement(), damage)).append(Messages.NEW_LINE);
-                if(!h.isAlive())
-                    heroes.remove(h);
-            }
-            else{
-                sb.append(e.name().toUpperCase()).append(Messages.ENEMY_MISS).append(Messages.NEW_LINE);
-            }
+            sb.append(e.performTurn(heroes));
+            heroes.removeIf(hero -> !hero.isAlive());
         }
 
         return sb.toString();
