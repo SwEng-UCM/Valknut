@@ -1,6 +1,8 @@
 /**
  * @author Hana
- * AI-assisted:no
+ * AI-assisted:yes
+ * AI tool used: ChatGPT
+ * Type of help received: Help with debugging and integration into the existing combat system.
  *
  */
 package me.model.boss;
